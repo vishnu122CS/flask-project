@@ -1,0 +1,17 @@
+<h1>hello world</h1>
+
+<p>this is my first webpage</p>
+
+<p>my name is {{ first_name }}</p>
+
+<p>{{ stuff|title }}</p>
+
+<p>my fav pizza is {{ favourite_pizza[0] }}</p>
+
+<!--to use for loop-->
+
+<h2>favourite pizzas:</h2>
+
+{% for topping in favourite_pizza %}
+<p>I like {{ topping|reverse }}.</p>
+{% endfor %}
